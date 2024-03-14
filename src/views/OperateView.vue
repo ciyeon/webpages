@@ -2,11 +2,11 @@
   <div>
     <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect"
       background-color="#545c64" text-color="#fff" active-text-color="#ffd04b" :router=flag>
-      <el-menu-item index="/operate/home">Home</el-menu-item>
-      <el-menu-item index="/operate/about">About</el-menu-item>
-      <el-menu-item index="/operate/test">Test</el-menu-item>
+      <el-menu-item index="/operate/home">主页</el-menu-item>
+      <el-menu-item index="/operate/about">编写案例</el-menu-item>
+      <el-menu-item index="/operate/test">润色案例</el-menu-item>
       <el-submenu index="2" id="user">
-        <template slot="title">欢迎，</template>
+        <template slot="title">欢迎，用户</template>
         <el-menu-item index="2-1">选项1</el-menu-item>
       </el-submenu>
     </el-menu>
@@ -19,12 +19,12 @@
   export default {
     data () {
       return {
-        activeIndex2: '1',
+        activeIndex2: '/operate/home',
         flag: true
       };
     },
     created () {
-      axios.get('/api/emps/' + this.$store.userMessage.account, {
+      axios.get('/api/emps/' + this.$store.userMessage.account, {   //错误，等待完善
         headers: {
           'token': this.$store.jwt
         }

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
@@ -17,8 +16,8 @@ const routes = [
     children:[
       {
         path: '/operate/home',
-        name: 'home',
-        component: HomeView
+        name: '主页',
+        component: ()=>import('../views/HomePageView.vue')
       },
       {
         path: '/operate/about',
