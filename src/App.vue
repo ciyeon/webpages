@@ -1,9 +1,17 @@
 <template>
   <div id="app">
-    <router-view />
+    <!-- <router-view /> -->
+    <home-page-view></home-page-view>
   </div>
 </template>
 
+<script>
+import HomePageView from './views/HomePageView.vue'
+export default{
+  components: { HomePageView },
+
+}
+</script>
 <style>
   #app {
     margin-top: 0px;
