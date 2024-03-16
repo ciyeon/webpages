@@ -30,6 +30,11 @@ const routes = [
         path:'/operate/test',
         name:'test',
         component:()=> import('../views/TestView.vue')
+      },
+      {
+        path: '/operate/write',
+        name: '写作',
+        component: ()=>import('../views/WriteView.vue')
       }
     ]
   },

@@ -2,12 +2,12 @@
   <div>
     <div id="white"></div>
     <div id="searchsize">
-      <el-input placeholder="搜索案例" v-model="input3">
+      <el-input placeholder="搜索案例" v-model="input">
         <el-button slot="append" icon="el-icon-search"></el-button>
       </el-input>
     </div>
     <el-row :gutter="50" id="blocktop">
-      <el-col :span="5" offset="2">
+      <el-col :span="5" :offset="2">
         <div class="grid-content bg-purple"></div>
       </el-col>
       <el-col :span="5">
@@ -21,7 +21,7 @@
       </el-col>
     </el-row>
     <el-row :gutter="50" id="blocktop">
-      <el-col :span="5" offset="2">
+      <el-col :span="5" :offset="2">
         <div class="grid-content bg-purple"></div>
       </el-col>
       <el-col :span="5">
@@ -35,7 +35,7 @@
       </el-col>
     </el-row>
     <el-row :gutter="50" id="blocktop">
-      <el-col :span="5" offset="2">
+      <el-col :span="5" :offset="2">
         <div class="grid-content bg-purple"></div>
       </el-col>
       <el-col :span="5">

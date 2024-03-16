@@ -8,6 +8,7 @@ export default new Vuex.Store({
     userMessage:{
       name:'',
       account:'',
+      permission:''
     },
     jwt: ''
   },
@@ -22,6 +23,9 @@ export default new Vuex.Store({
     },
     setAccount:(state,input)=>{
       state.userMessage.account=input;
+    },
+    setPermission:(state,input)=>{
+      state.userMessage.permission=input;
     }
   },
   actions: {

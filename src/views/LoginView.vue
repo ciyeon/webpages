@@ -34,10 +34,9 @@
     methods: {
       login () {
         axios.post('/api/login', {
-          username: this.form.account,
+          account: this.form.account,
           password: this.form.password
         }).then(res => {
-          // console.log(res.data)
           if (res.data.code == 1) {
             let temp = res.data.data;
             this.$store.commit('setJwt', temp)
